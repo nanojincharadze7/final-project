@@ -49,6 +49,10 @@ nav {
   justify-content: space-between;
   gap: 15px;
 }
+.fa-bars {
+  font-size: 28px;
+  display: none;
+}
 
 @media (max-width: 937px) {
   header {
@@ -220,7 +224,8 @@ nav {
 .sightseeing {
   color: #000;
   font-family: "roboto" bold;
-  font-size: 40px;
+  font-style: italic;
+  font-size: 60px;
   font-weight: 400;
   justify-content: center;
   margin-top: 15px;
@@ -286,6 +291,31 @@ nav {
   font-weight: 400;
   line-height: normal;
 }
+.seemore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.seemore input {
+  background: rgba(11, 37, 56, 0.8);
+  color: #fff;
+  font-family: JejuMyeongjo;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  max-width: 235px;
+  max-height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 /* section4 */
 .section4 {
@@ -293,7 +323,7 @@ nav {
   width: 100%;
 }
 .container4 {
-  max-width: 1165px;
+  max-width: 100%;
   width: 100%;
   /* border: 9px solid red; */
   max-height: 900px;
@@ -437,6 +467,19 @@ footer {
 
 .footer-section a:hover {
   color: #007bff;
+}
+
+@media (max-width: 950px) {
+  .subscribe-section form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .subscribe-section input,
+  .subscribe-section button {
+    margin: 5px 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
